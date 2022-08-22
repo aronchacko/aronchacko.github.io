@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom</title>
+    <style>
+            *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            }
+
+ .nav-link{
+    color:black;
+    font-weight: 600;
+    
+
+    
+    
+}
+.navbar-brand{
+    color: black;
+    font-family:fantasy;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+.btn4 {  
+  background-color: green;  
+  color: white;  
+  padding: 16px 20px;  
+  width: 100%;
+  margin: 8px 0;  
+  left: px;
+  border: none;
+  cursor: pointer;  
+  width: 20%;  
+  opacity: 0.9;  
+
+}
+.btn4:hover {  
+  opacity:6;  
+}
+
+.btn5{
+  background-color:green;
+  color: antiquewhite;
+  padding: 10px 25px;
+  border-radius: 10px;
+
+}
+    </style>
+
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg bg-light" style="position:static;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'homepage' %}"><i class="fas fa-laptop"></i>&nbsp;Ed Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              </li>
+            <li class="nav-item">
+              <a class="nav-link px-5" href="{% url 'classroompage' %}">Classroom</a>
+            </li></li>
+            <li class="nav-item">
+              <a class="nav-link px-9" href="#">Notes</a>
+            </li>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link px-5" href="#">Clear Your Doubts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-5" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5" href="#">Feedbacks</a>
+          </li>
+            
+          </div>
+        </div>
+      </nav>
+    
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-12 col-lg-11 col-xl-10">
+                <div class="card d-flex mx-auto my-5">
+                    <div class="row">
+                        <h1 class="wlcm" style="text-align:center">Welcome to EdHome Classroom</h1> <br>
+                        
+                        <br>
+                        <br>
+                        <p style="text-align:center">Kindly select the subjects you need tution from the respective class and board
+                        </p>
+                    </div>
+                </div>        
+            </div>                
+        </div>     
+        <section class="bg-light p-5" id="qwe">
+          <div class="container">
+            <h1 class="text-center">SUBJECTS</h1> <br> <br>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card p-3" style="width: 18rem;">
+                  <img src="https://www.careerindia.com/img/2020/06/plustworesult2020-1592591181.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">State Board</h5>
+                    <p class="card-text"><label>   
+                      Clasroom :  
+                      </label>   
+                        
+                      <select>  
+                      <option value="Course">Select Your Classroom</option>  
+                      <option value="BCA">9th Standard </option> 
+                      <option value="BCA">10th Standard </option> </select> 
+                      
+                      <br>
+                      <br>
+
+                      <label>   
+                        Subject :  
+                        </label>   
+                          
+                        <select>  
+                        <option value="Course">Select your subject</option>  
+                        <option value="BCA">Mathematics</option> 
+                        <option value="BCA">Science</option> 
+                        <option value="BCA">English</option></select>
+                        
+                        <br><br>
+
+                        <a href="{% url 'librapage' %}"><button type="submit" class="btn5"> Let`s Go!</button></a></p>
+                      
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-md-4">
+                <div class="card p-3" style="width: 18rem;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDPI9NJOmavQcruVpPUkQ_a9EV3Nc27x7FPOV3yzkFd22m6HcVTKDV5kJaYLjbo5O6StU&usqp=CAU" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CBSE</h5>
+                    <p class="card-text"><label>   
+                      Clasroom :  
+                      </label>   
+                        
+                      <select>  
+                      <option value="Course">Select Your Classroom</option>  
+                      <option value="BCA">9th Standard </option> 
+                      <option value="BCA">10th Standard </option> </select> 
+                      
+                      <br>
+                      <br>
+
+                      <label>   
+                        Subject :  
+                        </label>   
+                          
+                        <select>  
+                        <option value="Course">Select your subject</option>  
+                        <option value="BCA">Mathematics</option> 
+                        <option value="BCA">Science</option> 
+                        <option value="BCA">English</option></select>
+                        
+                        <br><br>
+
+                        <a href="{% url 'cbsepage' %}"><button type="submit" class="btn5"> Let`s Go!</button></a></p>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-md-4">
+                <div class="card p-3" style="width: 18rem;">
+                  <img src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/12/18/Pictures/_da0308dc-e3d9-11e7-b094-c21f82b60b0b.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ICSE</h5>
+                    <p class="card-text">
+                      <label>   
+                        Clasroom :  
+                        </label>   
+                          
+                        <select>  
+                        <option value="Course">Select Your Classroom</option>  
+                        <option value="BCA">9th Standard </option> 
+                        <option value="BCA">10th Standard </option> </select> 
+                        
+                        <br>
+                        <br>
+
+                        <label>   
+                          Subject :  
+                          </label>   
+                            
+                          <select>  
+                          <option value="Course">Select your subject</option>  
+                          <option value="BCA">Mathematics</option> 
+                          <option value="BCA">Science</option> 
+                          <option value="BCA">English</option></select>
+                          
+                          <br><br>
+
+                          <a href="{% url 'icsepage' %}"><button type="submit" class="btn5"> Let`s Go!</button></a>
+  
+
+                        
+
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <a href="#lkj"><i class="bi bi-house"></i></a>
+            </div>
+          </div>
+          </section>
+      
+        
+        
+        <div>
+
+
+          
+        <a href="{% url 'logout' %}"><button type="submit" class="btn4"> Logout</button></a>
+        
+          
+    </div>
+</body>
+</html>
